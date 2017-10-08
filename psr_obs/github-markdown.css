@@ -597,8 +597,12 @@
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
+/*  background-color: rgba(27,31,35,0.05); */
+/*  background-color: rgba(255,179,179,0.05); */
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+/*  border-radius: 3px; */
 }
 
 .markdown-body code::before,
@@ -648,6 +652,7 @@
   overflow: visible;
   line-height: inherit;
   word-wrap: normal;
+  color: #24292e;
   background-color: transparent;
   border: 0;
 }
