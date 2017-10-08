@@ -20,7 +20,7 @@ You may have heard about using the **command line** before to interact with a co
 
 What is usually meant when people say "I use the command line" or "I use the terminal" is "I use Bash to work on my Unix machine". Bash is what is known as a **shell**, which acts as a command interface between you and a computer which is running a Unix based operating system. It basically wraps the operating system with a human interface (hence the name shell). Unix is just a type of operating system, which many other operating systems are based on. Mac operating system OS X is actually based on Unix and there are also many flavors of Linux based on Unix as well (Red Hat, Ubuntu, CentOS, etc.). Windows is completely different, and a lot of the time that makes it unfit for scientific work if you need to use the command line *a lot*. 
 
-### Getting Set Up
+## Getting Set Up
 
 ##### Mac (OS X)
 You already have a Bash command line on your computer! Simply open the application **Terminal** and you're ready to go. This will open a **Bash** shell that lets you interact with your computer textually instead of visually.
@@ -33,7 +33,7 @@ If you use Windows 10, then you actually already have an Ubuntu installation on 
 
 Now, you're set up and ready to do some scientific computing!
 
-# Accesing Far Away Places via SSH
+## Accesing Far Away Places via SSH
 Most of the time, scientists don't run programs and store data on their own computers. Our personal computers simply are not powerful enough, do not have enough disk space, and do not have fast enough internet connections to act as a reasonable computing resource for us. Usually, we use our own command line and the command **SSH** to access the command line of a *different* computer. To follow along, open your **Bash** shell and use the commands below.
 
 The syntax to use SSH is pretty simple:
@@ -56,9 +56,9 @@ In summary the command
 ```sh
 ssh -Y uvastudent@146.88.5.35 -p 2221
 ```
-says "take me to the user uvastudent on the computer 146.88.5.35 via port 2221 which will send me to node 1 of the computer". Let's connect to the first LWA computing node using the previous command. You will be prompted for a password. Use **psr_obs_group**.
+says "take me to the user uvastudent on the computer 146.88.5.35 via port 2221 which will send me to node 1 of the computer". Let's connect to the first LWA computing node using the previous command. You will be prompted for a password.
 
-# Using the Command Line
+## Using the Command Line
 
 ### Navigation
 Once logged in, you will be presented to a shell, similar to your own. We're going to explore what's on this computer by using textual commands. To execute a command, you type its name followed by the 'Enter' key to execute it. Type `ls` to **list** what is in the current directory. You should see two items: `examples.desktop` and `uva_students`. Type `ls uva_students` to **list** the contents of the `uva_students` folder. Type `cd` to **change directory** into `uva_students`, which moves you into the folder. Type `ls` again to **list** what's in this directory. You should see another folder called `sgs7cr`. This is a folder I made for myself.  **Make** a **directory** by typing `mkdir <your_id>`, where <your_id> is replaced with your id. Type `ls` again to confirm your new folder was made. **Change directory** into the folder you just made by typing `cd <your_id>`. Type `pwd` to **print** the **working directory**. It should output `/home/uvastudent/uva_students/sgs7cr`. Type `cd ~` to return to the home directory, which is where you started from. Type `pwd` again and notice that you are in the `/home/uvastudent` folder. The `~` is just a placeholder for the folder `/home/uvastudent`.
@@ -159,7 +159,7 @@ df -h
 ```
 to show us the **disk file** system space usage. This means that it will show us how full all of the hard drives that are connected to our computing system are. Notice that a lot of the hard drives are pretty full! This means that we should be respectful of the other users on the system and quickly process, reduce, and delete the raw observational data that we obtain so that the file system doesn't fill up.
 
-# Making Files
+## Vim - Making and Editting Files
 Previously, we've only moved around and deleted files that others have created? How do we make our own? When working over SSH, the most efficient way to create and edit files it use a slimmed down and efficient text editor, which you probably aren't used to using. I'm going to be introducing you to one text editor called Vim.
 ### Vim
 Vim is a barebones, command line text editor which is popular among many scientists who have to use the command line *a lot*. Go to your directory `cd ~/uva_students/<your_id>`. Now type

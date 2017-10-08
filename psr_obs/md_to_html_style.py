@@ -10,7 +10,10 @@ def main():
 	subprocess.call(command)
 	html_file = open(file_name + '.html', 'r')
 	lines = html_file.readlines()
-	new_lines_top = ['<meta name="viewport" content="width=device-width, initial-scale=1">', '<link rel="stylesheet" href="github-markdown.css">', '<style>', '\t.markdown-body {', '\t\tbox-sizing: border-box;','\t\tmin-width: 200px;', '\t\tmax-width: 980px;', '\t\tmargin: 0 auto;', '\t\tpadding: 45px;', '\t}','\t@media (max-width: 767px) {', '\t\t.markdown-body {', '\t\t\tpadding: 15px;', '\t\t}', '\t}', '</style>', '<article class="markdown-body">']
+
+	css_location = 'github-markdown.css'
+#	css_location = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'
+	new_lines_top = ['<meta name="viewport" content="width=device-width, initial-scale=1">', '<link rel="stylesheet" href="{}">'.format(css_location), '<style>', '\t.markdown-body {', '\t\tbox-sizing: border-box;','\t\tmin-width: 200px;', '\t\tmax-width: 980px;', '\t\tmargin: 0 auto;', '\t\tpadding: 45px;', '\t}','\t@media (max-width: 767px) {', '\t\t.markdown-body {', '\t\t\tpadding: 15px;', '\t\t}', '\t}', '</style>', '<article class="markdown-body">']
 	new_lines_bottom = ['</article>']
 
 	out_file = open('{}.html'.format(file_name), 'w')
