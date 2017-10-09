@@ -2,16 +2,23 @@
 Make sure that you have each of the following software packages sucessfully installed before continuing.
 
 Mac (OS X)
+
 - [XQuartz](https://www.xquartz.org/)
 
 Windows 10
+
 - [The Windows 10 Linux Subsystem](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
+
 - [Xming](https://sourceforge.net/projects/xming/)
+
 - [WinSCP](https://winscp.net/eng/download.php)
 
 Windows (Not 10)
+
 - [PuTTY](http://www.putty.org/)
+
 - [Xming](https://sourceforge.net/projects/xming/)
+
 - [WinSCP](https://winscp.net/eng/download.php)
 
 # Bash and the Command Line
@@ -34,29 +41,35 @@ If you use Windows 10, then you actually already have an Ubuntu installation on 
 Now, you're set up and ready to do some scientific computing!
 
 ## Accesing Far Away Places via SSH
-Most of the time, scientists don't run programs and store data on their own computers. Our personal computers simply are not powerful enough, do not have enough disk space, and do not have fast enough internet connections to act as a reasonable computing resource for us. Usually, we use our own command line and the command **SSH** to access the command line of a *different* computer. To follow along, open your **Bash** shell and use the commands below.
+Most of the time, scientists don't run programs and store data on their own computers. Our personal computers simply are not powerful enough, do not have enough disk space, and do not have fast enough internet connections to act as a reasonable computing resource for us. Usually, we use our own command line and the command **SSH** to access the command line of a *different* computer..
+
+### In Bash
+
+Open your Bash shell using one of the methods described above.
 
 The syntax to use SSH is pretty simple:
 ```bash
 ssh <your_user_name>@<domain_name>
 ```
 
-For example, to access the Physics Department computing cluster *Galileo*, I would use the command
-```bash
-ssh sgs7cr@galileo.phys.virginia.edu
-```
-
-For our purposes, we will always be using a command of the form
-```bash
-ssh -Y uvastudent@146.88.5.35 -p 222x
-```
-where x is a number, either 1, 2, 3, 4, 5, or 6. The `-Y` tells the computer I am trying to access to forward to you all of the graphical windows that you might open (which XQuartz or Xming will handle for you). `uvastudent` is the *username* of the computing account we log into. The `146.88.5.35` is the *IP address* of the computer we are trying to access. Every computer on the internet has its own IP address when it connects to the internet, and it's sort of like the mailing address associated with each computer. Remote servers need to know *where* to send all of the bits and bytes to when you're trying to watch a video or load a web page, and they use IP addresses to know which computer to send what information. Traditionally, we would use a *domain name* to tell SSH which computer we are trying to get to, but at the end of the day, a domain name is mapped to an IP address, so from before `galileo.phys.virginia.edu` would map to `128.143.102.57`. Finally the `-p 222x` specifies *which* computer in the LWA computing cluster we would like to use, with the last digit specifying computer 1 - 6. It does this by specifying the *port* to connect on.
-
-In summary the command
+To log into our computing resources, we will be using the following command:
 ```sh
-ssh -Y uvastudent@146.88.5.35 -p 2221
+ssh -Y uvastudent@lwalab.phys.unm.edu
 ```
-says "take me to the user uvastudent on the computer 146.88.5.35 via port 2221 which will send me to node 1 of the computer". Let's connect to the first LWA computing node using the previous command. You will be prompted for a password.
+This command says "Log me into the user uvastudent on the computer accessed by lwalab.phys.unm.edu (a computer at the University of New Mexico)." The `-Y` means "please forward me the graphics from that computer to mine". If you have XQuartz (OSX) or XMing (Windows) open on your computer, then when you open a program with a graphical interface on the remote machine, the graphical interface will instead appear on your computer. When accessing the remote computer `lwalab.phys.unm.edu` for the first time, you will be prompted with a message something like `The authenticity of host ... can't be established.` Just type `yes` when you receive this message. You will also be asked for the password to the uvastudent account. Enter it when prompted. Don't be worred when no text appears on the screen: it's there, it's just invisible.  
+
+### In PuTTY
+Open PuTTY, then type into the 'Host Name (or IP address field)', `uvastudent@lwalab.phys.unm.edu`. Then click the + next to SSH on the left menu. Then click X11 in the SSH submenu. Click the checkbox next to 'Enable X11 fowarding' and in the field 'X display location' type `0.0.0.0`. This is equivalent to the `-Y` flag we passed to `ssh` before. Now click 'Open' at the bottom of the screen. Enter the password for our computing account and follow the instructions below.
+
+#
+
+Once logged into the `lwalab.phy.unm.edu` computer, run the following command:
+
+```sh 
+ssh -Y lwaucf1
+```
+You will have to enter the same password again. `lwaucf1` can be replaced with `lwaucf#` (any number 1, 2, 3, 4, 5, or 6) to access any of the 6 LWA UCF computing nodes. Now we are saying, "Using my username (now uvastudent), log into the computer lwaucf#". 
+Now we are logged into the LWA computing cluster. This is where all of our data will be stored and we will run all of our commands to process the data.
 
 ## Using the Command Line
 

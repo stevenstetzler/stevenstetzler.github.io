@@ -17,9 +17,22 @@
 <article class="markdown-body">
 	<h1 id="software-to-install">Software to Install</h1>
 	<p>Make sure that you have each of the following software packages sucessfully installed before continuing.</p>
-	<p>Mac (OS X) - <a href="https://www.xquartz.org/">XQuartz</a></p>
-	<p>Windows 10 - <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">The Windows 10 Linux Subsystem</a> - <a href="https://sourceforge.net/projects/xming/">Xming</a> - <a href="https://winscp.net/eng/download.php">WinSCP</a></p>
-	<p>Windows (Not 10) - <a href="http://www.putty.org/">PuTTY</a> - <a href="https://sourceforge.net/projects/xming/">Xming</a> - <a href="https://winscp.net/eng/download.php">WinSCP</a></p>
+	<p>Mac (OS X)</p>
+	<ul>
+	<li><a href="https://www.xquartz.org/">XQuartz</a></li>
+	</ul>
+	<p>Windows 10</p>
+	<ul>
+	<li><p><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">The Windows 10 Linux Subsystem</a></p></li>
+	<li><p><a href="https://sourceforge.net/projects/xming/">Xming</a></p></li>
+	<li><p><a href="https://winscp.net/eng/download.php">WinSCP</a></p></li>
+	</ul>
+	<p>Windows (Not 10)</p>
+	<ul>
+	<li><p><a href="http://www.putty.org/">PuTTY</a></p></li>
+	<li><p><a href="https://sourceforge.net/projects/xming/">Xming</a></p></li>
+	<li><p><a href="https://winscp.net/eng/download.php">WinSCP</a></p></li>
+	</ul>
 	<h1 id="bash-and-the-command-line">Bash and the Command Line</h1>
 	<p>You may have heard about using the <strong>command line</strong> before to interact with a computer. Most scientists are required to interact with computers without a Graphical User Interface (GUI) i.e. without a mouse or a screen. They need to run programs, create programs on remote computers, and move files around all without a mouse and a screen. The way they do this is by interacting with the computer via the <strong>command line</strong>, basically telling the computer through <em>text</em> what to do instead of through pointing and clicking, as most of us are used to.</p>
 	<p>What is usually meant when people say &quot;I use the command line&quot; or &quot;I use the terminal&quot; is &quot;I use Bash to work on my Unix machine&quot;. Bash is what is known as a <strong>shell</strong>, which acts as a command interface between you and a computer which is running a Unix based operating system. It basically wraps the operating system with a human interface (hence the name shell). Unix is just a type of operating system, which many other operating systems are based on. Mac operating system OS X is actually based on Unix and there are also many flavors of Linux based on Unix as well (Red Hat, Ubuntu, CentOS, etc.). Windows is completely different, and a lot of the time that makes it unfit for scientific work if you need to use the command line <em>a lot</em>.</p>
@@ -32,17 +45,20 @@
 	<p>If you use Windows 10, then you actually already have an Ubuntu installation on your computer. Follow <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">this guide</a> in order to get it set up on your computer. Once you have the Ubunutu subsystem set up, you can access a bash shell by opening the <strong>Command Prompt</strong>, as before, and simply typing <code>bash</code> to open the bash shell.</p>
 	<p>Now, you're set up and ready to do some scientific computing!</p>
 	<h2 id="accesing-far-away-places-via-ssh">Accesing Far Away Places via SSH</h2>
-	<p>Most of the time, scientists don't run programs and store data on their own computers. Our personal computers simply are not powerful enough, do not have enough disk space, and do not have fast enough internet connections to act as a reasonable computing resource for us. Usually, we use our own command line and the command <strong>SSH</strong> to access the command line of a <em>different</em> computer. To follow along, open your <strong>Bash</strong> shell and use the commands below.</p>
+	<p>Most of the time, scientists don't run programs and store data on their own computers. Our personal computers simply are not powerful enough, do not have enough disk space, and do not have fast enough internet connections to act as a reasonable computing resource for us. Usually, we use our own command line and the command <strong>SSH</strong> to access the command line of a <em>different</em> computer..</p>
+	<h3 id="in-bash">In Bash</h3>
+	<p>Open your Bash shell using one of the methods described above.</p>
 	<p>The syntax to use SSH is pretty simple:</p>
 	<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ssh</span> <span class="kw">&lt;</span>your_user_name<span class="kw">&gt;</span>@<span class="kw">&lt;</span>domain_name<span class="kw">&gt;</span></code></pre>
-	<p>For example, to access the Physics Department computing cluster <em>Galileo</em>, I would use the command</p>
-	<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ssh</span> sgs7cr@galileo.phys.virginia.edu</code></pre>
-	<p>For our purposes, we will always be using a command of the form</p>
-	<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ssh</span> -Y uvastudent@146.88.5.35 -p 222x</code></pre>
-	<p>where x is a number, either 1, 2, 3, 4, 5, or 6. The <code>-Y</code> tells the computer I am trying to access to forward to you all of the graphical windows that you might open (which XQuartz or Xming will handle for you). <code>uvastudent</code> is the <em>username</em> of the computing account we log into. The <code>146.88.5.35</code> is the <em>IP address</em> of the computer we are trying to access. Every computer on the internet has its own IP address when it connects to the internet, and it's sort of like the mailing address associated with each computer. Remote servers need to know <em>where</em> to send all of the bits and bytes to when you're trying to watch a video or load a web page, and they use IP addresses to know which computer to send what information. Traditionally, we would use a <em>domain name</em> to tell SSH which computer we are trying to get to, but at the end of the day, a domain name is mapped to an IP address, so from before <code>galileo.phys.virginia.edu</code> would map to <code>128.143.102.57</code>. Finally the <code>-p 222x</code> specifies <em>which</em> computer in the LWA computing cluster we would like to use, with the last digit specifying computer 1 - 6. It does this by specifying the <em>port</em> to connect on.</p>
-	<p>In summary the command</p>
-	<pre class="sh"><code>ssh -Y uvastudent@146.88.5.35 -p 2221</code></pre>
-	<p>says &quot;take me to the user uvastudent on the computer 146.88.5.35 via port 2221 which will send me to node 1 of the computer&quot;. Let's connect to the first LWA computing node using the previous command. You will be prompted for a password.</p>
+	<p>To log into our computing resources, we will be using the following command:</p>
+	<pre class="sh"><code>ssh -Y uvastudent@lwalab.phys.unm.edu</code></pre>
+	<p>This command says &quot;Log me into the user uvastudent on the computer accessed by lwalab.phys.unm.edu (a computer at the University of New Mexico).&quot; The <code>-Y</code> means &quot;please forward me the graphics from that computer to mine&quot;. If you have XQuartz (OSX) or XMing (Windows) open on your computer, then when you open a program with a graphical interface on the remote machine, the graphical interface will instead appear on your computer. When accessing the remote computer <code>lwalab.phys.unm.edu</code> for the first time, you will be prompted with a message something like <code>The authenticity of host ... can't be established.</code> Just type <code>yes</code> when you receive this message. You will also be asked for the password to the uvastudent account. Enter it when prompted. Don't be worred when no text appears on the screen: it's there, it's just invisible.</p>
+	<h3 id="in-putty">In PuTTY</h3>
+	<p>Open PuTTY, then type into the 'Host Name (or IP address field)', <code>uvastudent@lwalab.phys.unm.edu</code>. Then click the + next to SSH on the left menu. Then click X11 in the SSH submenu. Click the checkbox next to 'Enable X11 fowarding' and in the field 'X display location' type <code>0.0.0.0</code>. This is equivalent to the <code>-Y</code> flag we passed to <code>ssh</code> before. Now click 'Open' at the bottom of the screen. Enter the password for our computing account and follow the instructions below.</p>
+	<h1 id="section"></h1>
+	<p>Once logged into the <code>lwalab.phy.unm.edu</code> computer, run the following command:</p>
+	<pre class="sh"><code>ssh -Y lwaucf1</code></pre>
+	<p>You will have to enter the same password again. <code>lwaucf1</code> can be replaced with <code>lwaucf#</code> (any number 1, 2, 3, 4, 5, or 6) to access any of the 6 LWA UCF computing nodes. Now we are saying, &quot;Using my username (now uvastudent), log into the computer lwaucf#&quot;. Now we are logged into the LWA computing cluster. This is where all of our data will be stored and we will run all of our commands to process the data.</p>
 	<h2 id="using-the-command-line">Using the Command Line</h2>
 	<h3 id="navigation">Navigation</h3>
 	<p>Once logged in, you will be presented to a shell, similar to your own. We're going to explore what's on this computer by using textual commands. To execute a command, you type its name followed by the 'Enter' key to execute it. Type <code>ls</code> to <strong>list</strong> what is in the current directory. You should see two items: <code>examples.desktop</code> and <code>uva_students</code>. Type <code>ls uva_students</code> to <strong>list</strong> the contents of the <code>uva_students</code> folder. Type <code>cd</code> to <strong>change directory</strong> into <code>uva_students</code>, which moves you into the folder. Type <code>ls</code> again to <strong>list</strong> what's in this directory. You should see another folder called <code>sgs7cr</code>. This is a folder I made for myself. <strong>Make</strong> a <strong>directory</strong> by typing <code>mkdir &lt;your_id&gt;</code>, where <your_id> is replaced with your id. Type <code>ls</code> again to confirm your new folder was made. <strong>Change directory</strong> into the folder you just made by typing <code>cd &lt;your_id&gt;</code>. Type <code>pwd</code> to <strong>print</strong> the <strong>working directory</strong>. It should output <code>/home/uvastudent/uva_students/sgs7cr</code>. Type <code>cd ~</code> to return to the home directory, which is where you started from. Type <code>pwd</code> again and notice that you are in the <code>/home/uvastudent</code> folder. The <code>~</code> is just a placeholder for the folder <code>/home/uvastudent</code>.</p>
