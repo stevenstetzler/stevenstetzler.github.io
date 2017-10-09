@@ -35,8 +35,8 @@ You already have a Bash command line on your computer! Simply open the applicati
 ##### Windows
 Unfortunately, Windows is not based on the Unix operating system and thus it does not have a Bash shell. Instead it uses a different shell, which you can access all the same. Simply open the application **Command Prompt**. To find it, hit the Windows Key. If you are on Windows 10, just start typing "cmd" and it should pop up. On Windows 7, there should be a search function with the same capability, just type "cmd" into there to find the program. Since the shell provided by Windows is not Bash, it is largely irrelevant. If you don't have Windows 10, this is the end of the road for you, and you'll have to use **PuTTY** in order to access another machine which has a bash shell you can use, which we'll talk about later. If you do have Windows 10, read on.
 
-##### Ubunutu on Windows
-If you use Windows 10, then you actually already have an Ubuntu installation on your computer. Follow [this guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) in order to get it set up on your computer. Once you have the Ubunutu subsystem set up, you can access a bash shell by opening the **Command Prompt**, as before, and simply typing ``bash`` to open the bash shell.
+##### Ubuntu on Windows
+If you use Windows 10, then you actually already have an Ubuntu installation on your computer. Follow [this guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) in order to get it set up on your computer. Once you have the Ubuntu subsystem set up, you can access a bash shell by opening the **Command Prompt**, as before, and simply typing ``bash`` to open the bash shell.
 
 Now, you're set up and ready to do some scientific computing!
 
