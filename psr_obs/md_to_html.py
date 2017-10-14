@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys
 import os
 import subprocess
@@ -37,7 +38,7 @@ def main():
 	for l in lines:
 		if '\n' not in l:
 			l += '\n'
-		out_file.write('\t' + l)
+		out_file.write(l)
 	for l in new_lines_bottom:
 		if '\n' not in l:
 			l += '\n'
