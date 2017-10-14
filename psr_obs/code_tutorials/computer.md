@@ -186,8 +186,11 @@ Make sure you're in the **command mode**. Now type `:w`. Notice that now the tex
 The way to search files in Vim is by using the command `/` while in command mode. Type `/<your_name>` to find your name in the text file. Type `/i` to find each occurance of the letter 'i' in the text file. Hit `n` on your keyboard to move forward to the **next** occurance of 'i' and type `Shift+n` to move to the **previous** occurance of 'i'.
 
 Vim might seem a bit confusing and strange at first, but I promise you it is one of the fastest, most efficient, and most convienient ways to edit text files within the command line, so try to use it! If you hate Vim, there are other alternatives like Emacs and nano, which can be used the same way as Vim from the command line:
-```
+```sh
 emacs <your_name>.txt
+```
+and
+```
 nano <your_name>.txt
 ```
 But in my opinion, they are way harder to use without much benefit over good old Vim.
