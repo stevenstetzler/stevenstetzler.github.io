@@ -17,7 +17,15 @@
 <article class="markdown-body">
 <h1 id="lwa-pulsar-data-reduction-tutorial">LWA Pulsar Data Reduction Tutorial</h1>
 <h3 id="intro">Intro</h3>
-<p>LWA Pulsar data is reduced to a large number of data products with the intent to allow for us to do whatever reduction we wish to do and also to allow any future pulsar astronomers who grab the data from the LWA Pulsar Data Archive to do whatever it is they want to do. We reduce the data in such a way that there are files that support the following pulsar science: - Pulsar Timing - Polarization studies - Analysis of individual pulses - Pulse Profile vs frequency/time/whatever - Flux density measurements - Study of low frequency radio frequency interference</p>
+<p>LWA Pulsar data is reduced to a large number of data products with the intent to allow for us to do whatever reduction we wish to do and also to allow any future pulsar astronomers who grab the data from the LWA Pulsar Data Archive to do whatever it is they want to do. We reduce the data in such a way that there are files that support the following pulsar science:</p>
+<ul>
+<li><p>Pulsar Timing</p></li>
+<li><p>Polarization studies</p></li>
+<li><p>Analysis of individual pulses</p></li>
+<li><p>Pulse Profile vs frequency/time/whatever</p></li>
+<li><p>Flux density measurements</p></li>
+<li><p>Study of low frequency radio frequency interference</p></li>
+</ul>
 <p>A typical LWA pulsar observation results in about 130 files that are useful for some sort of pulsar study. Of course, this is a fairly complicated process, but luckily the hard work has already been done to develop the various tools needed.</p>
 <h3 id="checking-a-file-for-timetag-errors">Checking a file for &quot;timetag errors&quot;</h3>
 <p>A station of the LWA consists of ~256 dipole antennas each with two polarizations for a total of 512 signals. These signals go into an analog receiver (ARX or ASP) and then into a digital processor (DP) which then sends the data into &quot;Data Recorders&quot; where the signal is written to a set of disks. If there is a slow down in DP or when writing the disks, there can be a break in the data. In order to know whether or not such a break has occurred, the data are recorded in pieces that we call &quot;frames&quot;. Each frame has a time tag recorded with it to let us know what time the data corresponds to. If there is a break in the data, we can tell from these time tags and we call these &quot;timetag errors&quot;. So, before getting into the rest of the data analysis, it is generally a good idea to check for these timetag errors at the beginning. This can be done using the command:</p>
