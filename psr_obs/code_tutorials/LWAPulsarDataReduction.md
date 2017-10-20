@@ -1,6 +1,5 @@
 # LWA Pulsar Data Reduction Tutorial
 
-
 ### Intro
 LWA Pulsar data is reduced to a large number of data products with the intent to allow for us to do whatever reduction we wish to do and also to allow any future pulsar astronomers who grab the data from the LWA Pulsar Data Archive to do whatever it is they want to do. We reduce the data in such a way that there are files that support the following pulsar science:
 
