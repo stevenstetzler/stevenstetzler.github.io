@@ -1,5 +1,8 @@
 # Video recorded sessions from 2017
 
+## Lecture 4 - Working with Pulsar Data Products
+[![Lecture 4 - Working with Pulsar Data Products](https://uva.hosted.panopto.com//Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=a659e951-e166-4e93-bbe6-346c13ee2135&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a659e951-e166-4e93-bbe6-346c13ee2135)
+
 ## Lecture 3 - LWA Pulsar Data Reduction
 [![Lecture 3 - LWA Pulsar Data Reduction](https://uva.hosted.panopto.com//Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=bea523cc-aa3a-48a2-baf5-96b6a28ef878&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bea523cc-aa3a-48a2-baf5-96b6a28ef878)
 
