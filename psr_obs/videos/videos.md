@@ -1,6 +1,6 @@
 # Video recorded sessions from 2017
 
-## Lecture 6 - Review: From Observation to Folded Data
+## Lecture 6 - Review: From Observation to Folded Data [(slides)](https://docs.google.com/presentation/d/16UiwKg1vyl3e642kkcr9_PgDkz2JnCBYSSpgUskMPRY)
 [![Lecture 6 - Review: From Observation to Folded Data](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=84766cb1-b2cd-4927-9623-a2ead4ff402d&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84766cb1-b2cd-4927-9623-a2ead4ff402d)
 
 ## Lecture 5 - Checking Data and RFI Mitigation
