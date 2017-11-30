@@ -1,7 +1,10 @@
 # Video recorded sessions from 2017
 
+## Lecture 8 - Pulsar Timing in Practice
+[![Lecture 8 - Pulsar Timing in Practice](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=0565d8a2-c77d-49fe-b4e0-5cea78bac5fd&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0565d8a2-c77d-49fe-b4e0-5cea78bac5fd)
+
 ## Lecture 7 - Pulsar Timing [(slides)](https://docs.google.com/presentation/d/1hfKMa2342qBPs_A7MEkVMc0XcQi1MZVh9i9ELQFFbK0/edit?usp=sharing)
-[![Lecture 6 - Pulsar Timing](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=cd511986-9110-4236-8f26-6b69172110f5&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd511986-9110-4236-8f26-6b69172110f5)
+[![Lecture 7 - Pulsar Timing](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=cd511986-9110-4236-8f26-6b69172110f5&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd511986-9110-4236-8f26-6b69172110f5)
 
 ## Lecture 6 - Review: From Observation to Folded Data [(slides)](https://docs.google.com/presentation/d/16UiwKg1vyl3e642kkcr9_PgDkz2JnCBYSSpgUskMPRY)
 [![Lecture 6 - Review: From Observation to Folded Data](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=84766cb1-b2cd-4927-9623-a2ead4ff402d&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84766cb1-b2cd-4927-9623-a2ead4ff402d)
