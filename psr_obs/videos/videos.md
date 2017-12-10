@@ -1,9 +1,12 @@
 # Video recorded sessions from 2017
 
+## Lecture 9 - Beyond Pulsar Timing
+[![Lecture 9 - Beyond Pulsar Timing](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=48ba26c1-3223-4493-b2d6-772932ca13fd&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=48ba26c1-3223-4493-b2d6-772932ca13fd)
+
 ## Lecture 8 - Pulsar Timing in Practice
 [![Lecture 8 - Pulsar Timing in Practice](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=0565d8a2-c77d-49fe-b4e0-5cea78bac5fd&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0565d8a2-c77d-49fe-b4e0-5cea78bac5fd)
 
-## Lecture 7 - Pulsar Timing [(slides)](https://docs.google.com/presentation/d/1hfKMa2342qBPs_A7MEkVMc0XcQi1MZVh9i9ELQFFbK0/edit?usp=sharing)
+## Lecture 7 - Pulsar Timing [(slides)](https://docs.google.com/presentation/d/1hfKMa2342qBPs_A7MEkVMc0XcQi1MZVh9i9ELQFFbK0/edit?usp=sharing) Sorry no sound! :(
 [![Lecture 7 - Pulsar Timing](https://uva.hosted.panopto.com/Panopto/Services/FrameGrabber.svc/FrameRedirect?objectId=cd511986-9110-4236-8f26-6b69172110f5&mode=Delivery)](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd511986-9110-4236-8f26-6b69172110f5)
 
 ## Lecture 6 - Review: From Observation to Folded Data [(slides)](https://docs.google.com/presentation/d/16UiwKg1vyl3e642kkcr9_PgDkz2JnCBYSSpgUskMPRY)
