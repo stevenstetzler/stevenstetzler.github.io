@@ -22,16 +22,18 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Steven Stetzler</a></h1>
+						<h1><a target="_blank" href="index.html">Steven Stetzler</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a target="_blank" href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="#about" class="more scrolly">About</a></li>
-											<li><a href="#work" class="more scrolly">Work</a></li>
+											<li><a target="_blank" href="index.html">Home</a></li>
+											<li><a target="_blank" href="#about" class="more scrolly">About</a></li>
+											<li><a target="_blank" href="#science-platforms" class="more scrolly">Research: Science Platforms</a></li>
+											<li><a target="_blank" href="#nrao-binary-pulsars" class="more scrolly">Research: Binary Pulsars</a></li>
+											<li><a target="_blank" href="#projects" class="more scrolly">Class Projects</a></li>
 										</ul>
 									</div>
 								</li>
@@ -46,29 +48,184 @@
 							<p>Graduate Student at the University of Washington</p>
 						</div>
 						<ul class="icons">
-							<li><a href="http://github.com/stevenstetzler" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:stevengs@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a target="_blank" href="http://github.com/stevenstetzler" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a target="_blank" href="mailto:stevengs@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
-						<a href="#one" class="more scrolly">More Info</a>
+						<a target="_blank" href="#one" class="more scrolly">More Info</a>
 					</section>
 
 
 				<!-- Two -->
 					<section id="one" class="wrapper alt style2">
 						<section class="spotlight" id="about">
-							<div class="image"><img src="images/headshot.jpg" alt="" /></div><div class="content">
+							<div class="image"><img src="images/headshot.jpg" alt="" /></div>
+							<div class="content">
 								<h2>About Me</h2>
-								<p>I am a third year <a href="https://www.krellinst.org/csgf/">Computational Science Graduate Fellow</a> studying astronomy at the <a href="http://depts.washington.edu/astron/">University of Washington</a>. I am currently working with the Data Management group at UW led by <a href="http://research.majuric.org/public/">Mario Juric</a>. In the past, I have worked in high energy physics with the Mu2e collaboration at the University of Virginia and at the National Radio Astronomy Observatory studying binary pulsars. Feel free to reach out to me via email.</p>
-								<h4><a href="mailto:stevengs@uw.edu">Email</a></h4>
+								<p>
+									I am a fourth year <a target="_blank" href="https://www.krellinst.org/csgf/">
+										Computational Science Graduate Fellow
+									</a> studying astronomy at the 
+									<a target="_blank" href="http://depts.washington.edu/astron/">University of Washington</a>. I currently work on various projects at UW with my advisor 
+									<a target="_blank" href="http://research.majuric.org/public/">
+										Mario Juric
+									</a> and collaborators.
+								</p>
+								<p>
+									As an undergraduate physics and computer science major at the 
+									<a target="_blank" href="http://www.phys.virginia.edu/">University of Virginia</a>, 
+									I worked in high energy physics with the Mu2e collaboration, mentored by
+									<a target="_blank" href="http://fpg.phys.virginia.edu/fpgweb/uva_aag_members.shtml">Craig Dukes</a> 
+									and <a target="_blank" href="https://uva.theopenscholar.com/craig-group/">Craig Group</a>.
+									During an internship at the National Radio Astronomy Observatory,
+									I studied binary pulsars with <a target="_blank" href="https://orcid.org/0000-0002-7261-594X">Kevin Stovall</a> 
+									and with his help formed the <a target="_blank" href="https://pulsar-observers.github.io/">Pulsar Observers Research Group</a> at Virginia.
+								</p>
+								<p>
+									Feel free to reach out to me via email if 
+									you want to get into contact. Also find a copy of my CV at the link below and an ADS link.
+								</p>
+								<h4>
+									<a target="_blank" href="mailto:stevengs@uw.edu">Email</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="assets/pdf/steven_stetzler_cv_2021.pdf">CV</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22Stetzler%2C%20Steven%22)">ADS</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="https://github.com/stevenstetzler">GitHub</a>
+								</h4>
 							</div>
 						</section>
-						<section class="spotlight" id="work">
-							<div class="image"><img src="images/vla.jpg" alt="" /></div><div class="content">
-								<h2>Work</h2>
-								<p>I believe in open source coding and open source science. I try to put all of my projects on Github, which you can find a link for below. My main work focus right now is in organizing a new research group at the University of Virginia with Dr. Kevin Stovall of NRAO Socorro, involving approximately 20 physics and astronomy undergraduate students. Students observe pulsars using the Long Wavelength Array (LWA) over the span of an academic year, constructing a timing solution for the pulsar. You can follow the progress of the group below.</p>
-								<h4><a href="http://github.com/stevenstetzler">Github</a>&nbsp;&nbsp;&nbsp;
-									<a href="psr-obs/">Pulsar</a></h4>
+						<section class="spotlight" id="science-platforms">
+							<div class="image"><img src="images/science-platforms.png" alt="" /></div>
+							<div class="content">
+								<h2>Research: Cloud-Based Science Platforms</h2>
+								<p>
+									With my advisor Mario Juric and the Data Management group at UW, 
+									I developed software for deploying "science platforms" in cloud computing
+									centers. These science platforms are based on Jupyter Notebook servers 
+									spawned from a JupyterHub, each running as Docker containers on a 
+									Kubernetes cluster. Integrated within the Jupyter Notebooks are
+									<a target="_blank" href="https://github.com/astronomy-commons/axs">tools</a> 
+									based on <a target="_blank" href="https://spark.apache.org/">Apache Spark</a> 
+									for analyzing TB+ sized datasets. We've deployed several of these 
+									platforms to: 
+									<ol>
+										<li>
+											support analysis of catalog data from the 
+											<a target="_blank" href="https://www.ztf.caltech.edu/">ZTF</a>,
+										</li>
+										<li>
+											to support the <a target="_blank" href="https://www.growth.caltech.edu/growth-school-2020.html">2020 GROWTH summer school</a>,
+										</li>
+										<li>
+											to support the <a target="_blank" href="http://astrohackweek.org/2020/">2020 Astro Hack Week</a>,
+										</li>
+										<li>
+											and most recently three science collaborations for the <a target="_blank" href="https://www.lsst.org/">LSST</a>.
+										</li>
+									</ol>
+									Find at the following link more detail about this work including publications and talks.
+								</p>
+								<h4>
+									<a target="_blank" href="https://hub.astronomycommons.org/">Publications and Code</a>
+								</h4>
+							</div>
+						</section>
+						<section class="spotlight" id="science-platforms-cont">
+							<div class="content">
+								<p>
+									To further develop the usability of these science platforms, 
+									I worked with Mario Juric
+									to develop a JupyterHub that utilizes the Checkpoint/Restore 
+									functionality of 
+									<a target="_blank" href="https://podman.io/">Podman</a> 
+									containers for transparent migration of Jupyter notebooks 
+									between servers. This allows the user to access more computing
+									resources (CPU and Memory) without having to restart running code.
+								</p>
+								<h4>
+									<a target="_blank" href="https://arxiv.org/pdf/2101.05782.pdf">Paper</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="https://github.com/dirac-institute/elsa">Code</a>
+								</h4>
+							</div>
+							<div class="content">
+								<p>
+									Finally, I mentored <a target="_blank" href="https://github.com/techguybiswa">Biswarup Banerjee</a> 
+									for the 2020 
+									<a target="_blank" href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> 
+									(GSoC), developing an extension
+									to the Jupyter notebook interface to allow for easy creation
+									and manipulation of Apach Spark clusters, which we call the
+									"sparkmanager."
+								</p>
+								<h4 class="link-in-line">
+									<a target="_blank" href="https://github.com/astronomy-commons/sparkmanager">Code</a>
+								</h4>
+							</div>
+						</section>
+
+						<section class="spotlight" id="nrao-binary-pulsars">
+							<div class="image"><img src="images/vla.jpg" alt="" /></div>
+							<div class="content">
+								<h2>Research: Binary Pulsars</h2>
+								<p>
+									With Dr. Kevin Stovall at the National Radio Astronomy Observatory, 
+									I analyzed the <a target="_blank" href="http://nanograv.org/">NANOGrav</a>
+									<a target="_blank" href="https://arxiv.org/abs/1801.01837">11 year data set</a> to infer
+									population level statistics about binary pulsars. Specifically, we 
+									investigated the claim that binary pulsars are distributed on the 
+									sky uniformly over the cosine of their inclination. Research products
+									produced through this work include a poster for AAS meeting 231, and a 
+									summary document for internal NRAO use.
+								</p>
+								<h4>
+									<a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2018AAS...23124312S/abstract">Poster Abstract</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="assets/pdf/pulsar_aas_poster.pdf">Poster PDF</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="assets/pdf/pulsar_final_report.pdf">Report PDF</a>
+								</h4>
 								<p><small>Image courtesy of NRAO/AUI.</small></p>
+							</div>
+						</section>
+						<section class="spotlight" id="projects">
+							<div class="content">
+								<h2>Project: Performance Analysis of Approximate Gaussian Process Regression</h2>
+								<p>
+									For the University of Washington course CSE 547 "Machine Learning for Big Data" 
+									I produced a performance analysis of Kernel Interpolation for Scalable Structured Gaussian Processes
+									(<a target="_blank" href="http://proceedings.mlr.press/v37/wilson15.pdf">KISS-GP</a>) in the context of 
+									kernel (or hyperparameter) learning. I use this method to infer the rotational period
+									of a variable star, following the procedure of 
+									<a target="_blank" href="https://iopscience.iop.org/article/10.3847/1538-3881/aa9332/meta">Foreman-Mackey et al. (2017)</a>. 
+									Below you can find a poster and summary document for this project.
+								</p>
+								<h4>
+									<a target="_blank" href="assets/pdf/steven_stetzler_cse547_final.pdf">Summary PDF</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="assets/pdf/steven_stetzler_cse547_poster_final.pdf">Poster PDF</a>
+								</h4>
+							</div>
+							<div class="content">
+								<h2>Project: The Musical Wayfinder</h2>
+								<p>
+									For the University of Washington course CSE 512 "Data Visualization" 
+									I worked with <a target="_blank" href="https://hannahbish.me/">Hannah Bish</a>
+									to design, create, and publish an interactive tool for exploring 
+									Spotify music libraries using the 
+									<a target="_blank" href="https://d3js.org/">d3.js</a> 
+									JavaScript data visualization library.
+									
+									Below you can find a link to the code used and the project page 
+									which includes links to a summary poster and paper. 
+									The project page also lets you visualize your own library.
+								</p>
+								<h4>
+									<a target="_blank" href="http://www.musicalwayfinder.com/">Project Page</a>
+									&nbsp;&nbsp;
+									<a target="_blank" href="https://github.com/The-Wayfinder-Society/wayfinder-app">Code</a>
+								</h4>
 							</div>
 						</section>
 					</section>
@@ -76,11 +233,11 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="http://github.com/stevenstetzler" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:stevengs@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a target="_blank" href="http://github.com/stevenstetzler" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a target="_blank" href="mailto:stevengs@uw.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Steven Stetzler</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Steven Stetzler</li><li>Design: <a target="_blank" href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
